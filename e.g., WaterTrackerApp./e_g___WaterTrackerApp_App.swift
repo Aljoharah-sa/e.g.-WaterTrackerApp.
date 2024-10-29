@@ -3,10 +3,12 @@
 import SwiftUI
 
 @main
-struct ___PACKAGENAME:identifier___App: App {
+struct HydrateApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                SplashView() // Start with the splash screen
+            }
         }
     }
 }
